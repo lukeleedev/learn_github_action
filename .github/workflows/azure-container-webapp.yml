@@ -46,10 +46,10 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@latest # v3.0.0
+        uses: docker/setup-buildx-action@v3 # v3.0.0
 
       - name: Log in to GitHub container registry
-        uses: docker/login-action@latest # v3.0.0
+        uses: docker/login-action@v3 # v3.0.0
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
@@ -59,7 +59,7 @@ jobs:
         run: echo "REPO=${GITHUB_REPOSITORY,,}" >>${GITHUB_ENV}
 
       - name: Build and push container image to registry
-        uses: docker/build-push-action@latest # v5.0.0
+        uses: docker/build-push-action@v3 # v5.0.0
         with:
           push: true
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
