@@ -1,10 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
-using TodoApi.Domain;
 
-namespace TodoApi.Controllers;
+namespace learn_github_action.Controllers;
 
 [ApiController]
-[Route("api/[controller]")]
+[Route("[controller]")]
 public class WeatherForecastController : ControllerBase
 {
     private static readonly string[] Summaries = new[]
