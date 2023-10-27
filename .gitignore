@@ -1,5 +1,5 @@
-/Debug
-/Release
-/obj
+Debug/
+Release/
+obj/
 .sln
 .dll
