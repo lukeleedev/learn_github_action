@@ -3,3 +3,5 @@ Release/
 obj/
 .sln
 .dll
+.vs
+*user
