@@ -20,7 +20,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapGet("time/utc", () => Results.Ok(DateTime.UtcNow));
+app.MapGet("timenow/utc", () => Results.Ok(DateTime.UtcNow));
 
 app.MapControllers();
 
